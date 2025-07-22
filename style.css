@@ -1,23 +1,23 @@
 :root {
-  --clr-primary: hsl(47deg, 88%, 63%);
-  --clr-gray-950: hsl(0deg, 0%, 7%);
-  --clr-gray-500: hsl(0deg, 0%, 42%);
-  --clr-white: hsl(0deg, 0%, 100%);
+    --clr-primary: hsl(47deg, 88%, 63%);
+    --clr-gray-950: hsl(0deg, 0%, 7%);
+    --clr-gray-500: hsl(0deg, 0%, 42%);
+    --clr-white: hsl(0deg, 0%, 100%);
 
-  --font-weight-extra-bold: 800;
-  --font-weight-regular: 500;
+    --font-weight-extra-bold: 800;
+    --font-weight-regular: 500;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 body,
@@ -30,30 +30,30 @@ figure,
 blockquote,
 dl,
 dd {
-  margin-block-end: 0;
+    margin-block-end: 0;
 }
 
 ul[role="list"],
 ol[role="list"] {
-  list-style: none;
+    list-style: none;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    height: 100dvh;
 
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  letter-spacing: 0;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 0;
 
-  background-color: var(--clr-primary);
+    background-color: var(--clr-primary);
 }
 
 h1,
@@ -63,161 +63,163 @@ h4,
 button,
 input,
 label {
-  line-height: 150%;
+    line-height: 150%;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  text-wrap: balance;
+    text-wrap: balance;
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
+    text-decoration-skip-ink: auto;
+    color: currentColor;
 }
 
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 input,
 button,
 textarea,
 select {
-  font-family: inherit;
-  font-size: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 textarea:not([rows]) {
-  min-height: 10em;
+    min-height: 10em;
 }
 
 :target {
-  scroll-margin-block: 5ex;
+    scroll-margin-block: 5ex;
 }
 
 header.header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .header button {
-  width: 4rem;
-  height: 1.5rem;
+    width: 4rem;
+    height: 1.5rem;
 
-  background: var(--clr-primary);
-  border-radius: 4px;
-  border: 2px solid var(--clr-gray-950);
+    background: var(--clr-primary);
+    border-radius: 4px;
+    border: 2px solid var(--clr-gray-950);
 }
 
 .header button:focus {
-  outline: dashed var(--clr-gray-500);
+    outline: dashed var(--clr-gray-500);
 }
 
 .header input {
-  display: none;
+    display: none;
 }
 
 .header label {
-  display: block;
+    display: block;
 
-  font-size: max(0.75rem, min(2vw, 0.875rem));
-  font-weight: var(--font-weight-extra-bold);
+    font-size: max(0.75rem, min(2vw, 0.875rem));
+    font-weight: var(--font-weight-extra-bold);
 }
 
 .illustration .illustration-path {
-  fill: var(--clr-primary);
+    fill: var(--clr-primary);
 }
 
 main.card {
-  margin-block-start: auto;
-  margin-inline: 1rem;
-  padding: 2rem;
-  max-width: 385px;
+    margin-block-start: auto;
+    margin-inline: min(1rem, max(2vw, 2rem));
+    padding: 2rem;
+    max-width: 24.0625rem;
 
-  background-color: var(--clr-white);
-  border: 1px solid var(--clr-gray-950);
-  border-radius: 20px;
-  box-shadow: 10px 10px var(--clr-gray-950);
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-gray-950);
+    border-radius: 20px;
+    box-shadow: 10px 10px var(--clr-gray-950);
 }
 
 .card .illustration {
-  display: block;
-  height: auto;
-  max-width: 100%;
+    display: block;
+    height: auto;
+    max-width: 100%;
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .card .content {
-  margin-block-start: 1rem;
+    margin-block-start: 2rem;
 }
 
 .content .category {
-  display: inline-block;
-  padding: 4px 12px;
+    display: inline-block;
+    padding: 4px 12px;
 
-  font-weight: var(--font-weight-extra-bold);
-  font-size: max(0.75rem, min(2vw, 0.875rem));
+    font-weight: var(--font-weight-extra-bold);
+    font-size: max(0.75rem, min(2vw, 0.875rem));
+    line-height: 150%;
+    letter-spacing: 0;
 
-  background-color: var(--clr-primary);
-  border-radius: 4px;
-  color: var(--clr-gray-950);
+    background-color: var(--clr-primary);
+    border-radius: 4px;
+    color: var(--clr-gray-950);
 }
 
 .content .published {
-  display: block;
-  margin-block-start: 1rem;
+    display: block;
+    margin-block-start: 1rem;
 
-  font-weight: var(--font-weight-regular);
-  font-size: max(0.75rem, min(2vw, 0.875rem));
+    font-weight: var(--font-weight-regular);
+    font-size: max(0.75rem, min(2vw, 0.875rem));
 
-  color: var(--clr-gray-950);
+    color: var(--clr-gray-950);
 }
 
 .content .title {
-  margin-block-start: 1rem;
+    margin-block-start: 1rem;
 
-  font-size: max(1.25rem, min(2vw, 1.5rem));
+    font-size: max(1.25rem, min(2vw, 1.5rem));
 }
 
 .content .title:hover {
-  color: var(--clr-primary);
+    color: var(--clr-primary);
 
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .content .description {
-  font-weight: var(--font-weight-regular);
-  font-size: max(0.875rem, min(2vw, 1rem));
+    font-weight: var(--font-weight-regular);
+    font-size: max(0.875rem, min(2vw, 1rem));
 
-  color: var(--clr-gray-500);
+    color: var(--clr-gray-500);
 }
 
 .card .author {
-  display: flex;
-  align-items: center;
-  margin-block-start: 1rem;
+    display: flex;
+    align-items: center;
+    margin-block-start: 1rem;
 
-  font-weight: var(--font-weight-extra-bold);
-  font-size: max(0.75rem, min(2vw, 0.875rem));
+    font-weight: var(--font-weight-extra-bold);
+    font-size: max(0.75rem, min(2vw, 0.875rem));
 
-  color: var(--clr-gray-950);
+    color: var(--clr-gray-950);
 }
 
 .author .avatar {
-  height: 32px;
-  width: 32px;
-  margin-inline-end: 12px;
+    height: 32px;
+    width: 32px;
+    margin-inline-end: 12px;
 }
 
 footer {
-  margin-block-start: auto;
+    margin-block-start: auto;
 }
