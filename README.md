@@ -29,7 +29,7 @@ There is a hover state and an input button for users to play around.
 ### Links
 
 - Solution URL: [Link to repo](https://github.com/samirhembrom/blogcard)
-- Live Site URL: [Link to live page](https://your-live-site-url.com)
+- Live Site URL: [Link to live page](https://blogcard-psi.vercel.app/)
 
 ## My process
 
